@@ -247,10 +247,10 @@
 
     //practice 2
     //method 1
-    let prizes = [250, 645, 300, 900, 50]
-    for (let value of prizes) {
-        console.log(value-(value/10));   
-    }
+    // let prizes = [250, 645, 300, 900, 50]
+    // for (let value of prizes) {
+    //     console.log(value-(value/10));   
+    // }
     //method 2
     // let prizes = [250, 645, 300, 900, 50]
     
