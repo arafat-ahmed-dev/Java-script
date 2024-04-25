@@ -272,4 +272,29 @@
 // let total = marvel.concat(dc);//multiple arrays connect
 // console.log(`all heros are ${total}`);
 
+// let marvel = ["thor", "iron man", "capten americha"];
+// let value = marvel.unshift("antman"); // add anything on first
+// console.log(value);
+
+// let marvel = ["thor", "iron man", "capten americha"];
+// let value = marvel.shift();// delete first value and return result
+// console.log(value);
+
+// let marvel = ["thor", "iron man", "capten americha" , "Doctor Strange"];
+// let value = marvel.slice(2,4); // return a piece of arrays
+// console.log(value);
+
+// let marvel = ["thor", "iron man", "capten americha"];
+// let value = marvel.splice(1, 1, "Dead Iron man" ); // arrays any element remove , replace method . first of all slelct the element and then if you remove the element so assign value 1 or if you not remove the element rather replace then you tell the replace new element
+// console.log(value);
+
+//practice 1 
+const companies = ["Bloomberg", "Microsoft", "Uber", "Googele", "IBM", "Netflix"];
+companies.shift();
+companies.splice(1,1,"Ola");
+companies.push("Amazon");
+console.log(companies);
+
+
+
 
