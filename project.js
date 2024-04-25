@@ -262,7 +262,7 @@
 // let items = ["Keyboard", "Mouse", "Printer", "Speaker"];
 // items.push("Destop", "Burger"); // add new items in the end
 // console.log(items);
- 
+
 // let items = ["Keyboard", "Mouse", "Printer", "Speaker"];
 // items.pop()//delete a items of end
 // console.log(items);
@@ -288,13 +288,62 @@
 // let value = marvel.splice(1, 1, "Dead Iron man" ); // arrays any element remove , replace method . first of all slelct the element and then if you remove the element so assign value 1 or if you not remove the element rather replace then you tell the replace new element
 // console.log(value);
 
-//practice 1 
-const companies = ["Bloomberg", "Microsoft", "Uber", "Googele", "IBM", "Netflix"];
-companies.shift();
-companies.splice(1,1,"Ola");
-companies.push("Amazon");
-console.log(companies);
+//practice 1
+// const companies = ["Bloomberg", "Microsoft", "Uber", "Googele", "IBM", "Netflix"];
+// companies.shift();
+// companies.splice(1,1,"Ola");
+// companies.push("Amazon");
+// console.log(companies);
 
+//finction in js
 
+//normal Function
 
+// function sum(a , b) {
+//     console.log(a+b);
+// }
+// sum(120, 80)//2 number sum function
 
+// function plus(x,y) {
+//     s = x+y;
+//     return s ;
+// }
+// let val = plus(3, 4);
+// console.log(val);
+
+// Arrow function
+//Sum Function
+const sum = (a, b) => {
+  return a + b;
+};
+let val = sum(5, 5);
+console.log(val);
+//Multiplication Function
+const mult = (a, b) => {
+  return a * b;
+};
+let multipai = mult(5, 5);
+console.log(multipai);
+
+function vowels(str) {
+  let value = 0;
+  for (const count of str) {
+    if (
+      count === "A" ||
+      count === "E" ||
+      count === "I" ||
+      count === "O" ||
+      count === "U" ||
+      count === "a" ||
+      count === "e" ||
+      count === "i" ||
+      count === "o" ||
+      count === "u"
+    ) {
+      value++;
+    }
+  }
+  return value ;
+}
+let letter = vowels("Arafat Ahmed");
+console.log(letter);
