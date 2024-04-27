@@ -158,18 +158,18 @@
 //  conso'le.log('str'.length',str.length); // string length
 //  conso'le.log(str[3]',str[3]); // string indices
 
-//templete Literals
+// templete Literals
 //  let name = `Arfat Ahmed`
 //  console.log('Name :',name);
 //  console.log('Typeof Name :',typeof name);
 
-//string interpolation
+// string interpolation
 // const obj = {
 //     item: `pen`,
 //     cost : 20,
 // };
 //  console.log(`The cost of ${obj.item} is ${obj.cost} Taka`);
-//escape character
+// escape character
 // console.log('Arafat \nAhmed'); //line break
 
 // string method
@@ -197,7 +197,7 @@
 // let str = `I love you`;
 // console.log('search character', str.charAt(2));//search any character
 
-//exercise 2
+// exercise 2
 
 // // Get user's full name
 // const fullName = 'prompt('Enter your Ful'lname: ');
@@ -214,27 +214,27 @@
 // // Print the username
 // alert(`Your username is ${username}`);
 
-//Arrays in js
-//create arrays
+// Arrays in js
+// create arrays
 // let marks = [97, 89, 34, 64];//similer item store
 
-//array indices
+// array indices
 // console.log(marks[2]=85); //change any items
 
-//looping over
+// looping over
 // for (let index = 0; index < marks.length; index++) {
 //     conso'le.log(i =', marks[index]);   // for loop
 // }
 // for (const mark of marks) {
 //     console.log('mark is',mark);//for of loop
-//}
+// }
 
 // practice 1
-//method 1
+// method 1
 // let marks = [85, 97, 44, 37, 76, 60]
 // let average = (85+ 97+44+ 37+ 76+ 60)/marks.length;
 // console.log('average =', average);
-//method 2
+// method 2
 // let marks = [85, 97, 44, 37, 76, 60]
 // let sum = 0;
 // for (let val of marks) {
@@ -243,13 +243,13 @@
 // let avr = sum / marks.length;
 // console.log(`average value is = ${avr}`);
 
-//practice 2
-//method 1
+// practice 2
+// method 1
 // let prizes = [250, 645, 300, 900, 50]
 // for (let value of prizes) {
 //     console.log(value-(value/10));
 // }
-//method 2
+// method 2
 // let items = [250, 645, 300, 900, 50];
 // for (let i = 0; i < items.length; i++) {
 //   let offer = items[i] / 10;
@@ -288,16 +288,16 @@
 // let value = marvel.splice(1, 1, "Dead Iron man" ); // arrays any element remove , replace method . first of all slelct the element and then if you remove the element so assign value 1 or if you not remove the element rather replace then you tell the replace new element
 // console.log(value);
 
-//practice 1
+// practice 1
 // const companies = ["Bloomberg", "Microsoft", "Uber", "Googele", "IBM", "Netflix"];
 // companies.shift();
 // companies.splice(1,1,"Ola");
 // companies.push("Amazon");
 // console.log(companies);
 
-//finction in js
+// finction in js
 
-//normal Function
+// normal Function
 
 // function sum(a , b) {
 //     console.log(a+b);
@@ -312,38 +312,93 @@
 // console.log(val);
 
 // Arrow function
-//Sum Function
-const sum = (a, b) => {
-  return a + b;
-};
-let val = sum(5, 5);
-console.log(val);
-//Multiplication Function
-const mult = (a, b) => {
-  return a * b;
-};
-let multipai = mult(5, 5);
-console.log(multipai);
+// Sum Function
+// const sum = (a, b) => {
+//   return a + b;
+// };
+// let val = sum(5, 5);
+// console.log(val);
+// //Multiplication Function
+// const mult = (a, b) => {
+//   return a * b;
+// };
+// let multipai = mult(5, 5);
+// console.log(multipai);
 
-function vowels(str) {
-  let value = 0;
-  for (const count of str) {
-    if (
-      count === "A" ||
-      count === "E" ||
-      count === "I" ||
-      count === "O" ||
-      count === "U" ||
-      count === "a" ||
-      count === "e" ||
-      count === "i" ||
-      count === "o" ||
-      count === "u"
-    ) {
-      value++;
-    }
-  }
-  return value ;
-}
-let letter = vowels("Arafat Ahmed");
-console.log(letter);
+//a Function to count vowel from any string
+// function vowels(str) {
+//   let value = 0;
+//   for (const count of str) {
+//     if (
+        //count === "A" ||
+        //count === "E" ||
+        //count === "I" ||
+        //count === "O" ||
+        //count === "U" ||
+        //count === "a" ||
+        //count === "e" ||
+        //count === "i" ||
+        //count === "o" ||
+        //count === "u"
+//     ) {
+//       value++;
+//     }
+//   }
+//   return value ;
+// }
+// let letter = vowels("Arafat Ahmed");
+// console.log(letter);
+
+// a function to count consonet from any string
+// let vowels = (str)=>{
+//    let value = 0;
+//    for (const count of str) {
+//      if (
+//         !(
+//         count === "A" ||
+//         count === "E" ||
+//         count === "I" ||
+//         count === "O" ||
+//         count === "U" ||
+//         count === "a" ||
+//         count === "e" ||
+//         count === "i" ||
+//         count === "o" ||
+//         count === "u")
+//      ) {
+//        value++;
+//      }
+//    }
+//    return value;
+// }
+// let letter = vowels("Arafat Ahmed");
+// console.log(letter);
+
+//forEach Loops in Arrays 
+
+// let arr = [1, 2, 4 , 5, 6];
+// arr.forEach(function printval(val){
+//   console.log(val);
+// });
+// let str = ["Arafat", "Mursed", "Nasir", "Akif"];
+// str.forEach((val, idx, arr) => {
+//   console.log(val.toUpperCase(),idx, val.length, arr);
+// });
+
+//practice
+// let number = [2, 4,5,6,7,8,9];
+// number.forEach((number) => {
+//   console.log(number**=2);
+// });
+// //method 2
+// let calculateNum = (number) => {
+//   console.log(number**=2);
+// };
+// number.forEach(calculateNum);
+
+// map method 
+let number = [2,4,5,6,7,8,9];
+let newarr = number.map((value)=>{
+        return value;
+});
+console.log(newarr);
