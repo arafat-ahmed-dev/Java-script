@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      .switch input {
+        display: none;
+      }
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 56px;
+        height: 30px;
+        background-color: aqua;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+      }
+      span {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        background-color: yellow;
+        position: absolute;
+        transition: 300ms linear;
+        margin-left: 4px;
+      }
+      .switch input:checked + span {
+        transform: translateX(95%);
+        background-color: white;
+      }
+      .active {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Toggle Switch</h2>
+    <label class="switch">
+      <input type="checkbox" id="trogglSwitch">
+      <span class="slider round"></span>
+    </label>
+    
+<script>
+    const checkbox = document.getElementById('trogglSwitch');
+        const body = document.body;
+
+        checkbox.addEventListener('change', () => {
+            if (checkbox.checked) {
+                body.style.backgroundColor = 'black';
+                body.style.color ='white';
+            } else {
+                body.style.backgroundColor = 'white';
+                body.style.color ='black';
+            }
+        });
+    </script>
+   </body>
+</html>
+
+

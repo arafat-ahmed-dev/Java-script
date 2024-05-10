@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         @import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+        *{
+            margin: 0;
+        }
+        html,body{
+            margin: 0;
+            color: white;
+            box-sizing: border-box;
+            font-family: "Muli", sans-serif;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            background-color: steelblue;
+            justify-content: center;
+            align-items: center;
+        }
+        .login-bar{
+            height: 390px;
+            width: 300px;
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 20px 40px;
+            border-radius: 5px;
+        }
+        .login-bar h1{
+            text-align: center;
+            padding: 20px o 15px 0;
+            margin: 15px 0 ;
+        }
+        a{
+            text-decoration: none;
+            color: lightblue;
+        }
+        .login-control input {
+            height: 40px;
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid #fff;
+            background-color: transparent;
+            outline: none;
+            padding: 10px 0;
+            font-size: 17px;
+            color: white;
+            margin: 15px 0 ;
+        }
+        .login-control ::placeholder {
+        font-size: 17px;
+        color: White;
+        font-weight: 400;
+        opacity: 1;
+        }
+        .submit {
+            border: none;
+            background-color: transparent;
+            outline: none;
+            background-color: rgb(136, 206, 230);
+            width: 100%;
+            height: 50px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 15px;
+            margin: 35px 0 20px 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-bar">
+        <form>
+            <h1>Please Login</h1>
+            <div class="login-control">
+                
+                <input type="text" id="email" placeholder="E-mail">
+            </div>
+            <div class="login-control">
+                <input type="password" id="password" required placeholder="Password">
+            </div>
+            <button class="submit" type="submit">Login</button>
+            <p>Don't have a account?  <a href="#">Register now</a></p>
+        </form>
+        </div>
+    </div>
+    <script>
+        let btn = document.querySelector(".submit");
+        btn.addEventListener("click",function () {
+            alert("Congratulation");
+            btn
+        })
+    </script>
+</body>
+</html>

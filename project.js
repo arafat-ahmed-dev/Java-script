@@ -397,8 +397,88 @@
 // number.forEach(calculateNum);
 
 // map method 
-let number = [2,4,5,6,7,8,9];
-let newarr = number.map((value)=>{
-        return value;
-});
-console.log(newarr);
+// let number = [2,4,5,6,7,8,9];
+// let newarr = number.map((value)=>{
+//         return value;
+// });
+// console.log(newarr);
+
+// filter method
+// let number = [2,3,4,5,6,7,8,9];//find arrays even value
+// let newarr = number.filter((value)=>{
+//         return value%2 === 0;
+// })
+// console.log(newarr);
+
+// let number = [2,3,4,5,6,7,8,9];//find arra ysodd value
+// let newarr = number.filter((value)=>{
+//         return !(value%2 === 0);
+// })
+// console.log(newarr);
+
+//Reduce method 
+// let number = [2,3,4,1];//it return one value
+// let value = 0;
+// let sumNumber = number.reduce((result , currrentValue)=>{
+//         return result + currrentValue;
+// }
+// )
+// console.log(sumNumber);
+
+// let number = [2,3,4,1];//it return large number
+// let value = 0;
+// let sumNumber = number.reduce((prev , curr)=>{
+//         return prev > curr ? prev : curr;
+// }
+// )
+// console.log(sumNumber);
+
+// practice 1
+// let marks = [86, 56, 73, 90, 95];
+// let filter = marks.filter((val)=>{
+//         return val >= 90;
+// })
+// console.log(filter);
+
+// practice 2
+// let n = prompt("Enter a Number");//n number array create and then the array reduce sum calculate
+// let arr = [];
+//  for (let i = 0; i <= n; i++) {
+//         arr[i-1]= i;
+//  }
+// console.log(arr);
+// let reduce = arr.reduce((result, currrentValue) => {
+//         return result + currrentValue;
+// })
+// console.log(reduce);
+// let factorial = arr.reduce((result, currrentValue) => {
+//         return result * currrentValue;
+// })
+// console.log(factorial);
+
+
+//event listener 
+// let btn = document.querySelector("button");
+// btn.addEventListener("click", (index) => {
+//         console.log(`hello`);   
+//         console.log(index);
+         
+// });
+//practice
+let btn = document.querySelector("button") 
+let body = document.querySelector("body");
+let value = 0;
+
+btn.addEventListener("click", () => {
+        if (value == 0) {
+                body.style.backgroundColor = "Black";
+                body.style.color = "white";
+                value = 1;
+        } else {
+                body.style.backgroundColor = "white";
+                body.style.color = "Black";
+                value = 0;
+        }
+}
+
+)

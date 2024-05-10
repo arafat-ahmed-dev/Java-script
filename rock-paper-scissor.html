@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock paper scissor</title>
+    <style>
+           *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:sans-serif;
+        }
+        .game-container{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image: url("background.jpeg");
+            background-position: center;
+            background-size: cover;
+        }
+        .image-container{
+            height: 20vh;
+            width: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+        }
+        .image{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+        .image img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .image:hover {
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 100px;
+        }
+        .result {
+            height: 90px;
+            width: 90px;
+            background-color: #65675f;
+            border-radius: 50%;
+            border: 3px solid white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: #EBF5EE;
+            position: absolute;
+            z-index: 1;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .user, .comp{
+            width: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 50px;
+            position: relative;
+            color: #EBF5EE;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .score{
+        height: 50px;
+        background-color: #f8f8f8;
+        font-size: 25px;
+        font-weight: 500;
+        width: 40px;
+        color: #4f504d;
+        }
+        .user {
+        margin-right: 30px;
+        border-radius: 10px 0 0 10px;
+        background-color: #921224;
+        }
+        .comp{
+        gap: 5px;
+        margin-left: 30px;
+        border-radius: 0 10px 10px 0;
+        background: #11468F;
+        }
+        .name{
+        padding: 20px;
+        }
+        .scL{
+        border-radius: 9px 0 0 9px;
+        text-align: center;
+        padding-top: 10px;
+        }
+        .scR{
+        text-align: center;
+        padding-top: 10px;
+        border-radius: 0 9px 9px 0;
+        }
+    </style>
+</head>
+<body>
+  <div class="game-container">
+    <div class="image-container">
+      <div class="image">
+            <img src="rock.png" alt="rock">
+        </div>
+        <div class="image">
+            <img src="paper.svg" alt="paper">
+        </div>
+        <div class="image">
+            <img src="scissors.svg" alt="sizer">
+        </div>
+    </div>
+        <div class="container">
+            <div class="user">
+                <p class="score scL">0</p>
+                <p class="name">Abdur</p>
+            </div>
+          <div class="result">
+            <p class="res">You Win</p>
+          </div>
+        <div class="comp">
+          <p class="name">Computer</p>
+          <p class="score scR">0</p>
+        </div>
+        </div>
+      </div>
+</div>
+</body>
+</html>
